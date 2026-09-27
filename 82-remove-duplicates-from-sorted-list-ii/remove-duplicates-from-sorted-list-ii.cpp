@@ -22,22 +22,19 @@ public:
         
 
          while(temp!=NULL && temp->next!=NULL){
-
+            
             if(temp->val==temp->next->val){
-
-                while(temp->next!=NULL 
-                     && temp->val==temp->next->val){ 
+                while(temp->next!=NULL &&
+                    temp->val==temp->next->val){
                     temp=temp->next;
-
                 }
-                ans->next=temp->next; 
+                ans->next=temp->next;
             }
             else{
                 ans=ans->next;
-            } 
-            temp=temp->next; 
+            }
+            temp=temp->next;
         }
-        
         return dummy->next;
     }
 };
