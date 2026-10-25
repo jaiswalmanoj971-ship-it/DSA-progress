@@ -1,8 +1,8 @@
 class Solution {
 public:
     bool wordPattern(string pattern, string s) {
-        map<char,string>mp;
-        map<string,char>mp2;
+        unordered_map<char, string> mp;
+        unordered_map<string, char> mp2;
         int i=0;
         int u=0;
 
