@@ -1,4 +1,4 @@
-class Solution {
+class Solution{
 public:
     bool wordPattern(string pattern, string s) {
         unordered_map<char, string> mp;
@@ -22,15 +22,16 @@ public:
                 return false;
 
             }
+
             else{
                 if(mp2.find(temp)!=mp2.end())    
-                    return false;
-
+                    return false; 
 
                 mp[pattern[u]]=temp;
                 mp2[temp]=pattern[u];
             }
            
+
             i=j+1;
             u++;
 
